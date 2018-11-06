@@ -23,10 +23,54 @@
 		<link rel="stylesheet" href="css/linearicons.css">
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/modal-video.min.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
+
+<style>
+	@media (min-width: 576px) {
+		.modal-dialog {
+			max-width: 800px;
+		}
+	}
+
+	.single-publish .top {
+		min-height: 150px;
+	}
+
+	.blog-image {
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.fa-arrow-down {
+		font-size: 36px;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.btn-primary {
+		color: #fff;
+		background-color: #3372b5;
+		border-color: #3372b5;
+		margin-bottom: 5px;
+	}
+
+	button.close {
+		position: absolute;
+		top: 0;
+		right: 2px;
+		font-size: 47px;
+		z-index: 10;
+	}
+
+	.section-full {
+		padding: 50px 0;
+	}
+</style>
 	<body>
 		<div id="top"></div>
 		<!-- Start Header Area -->
@@ -41,11 +85,11 @@
 							<nav class="d-flex align-items-center">
 								<ul class="main-menu">
 									<li><a href="#top">Home</a></li>
-									<li><a href="#services">Cобытия</a></li>
+									<!--<li><a href="#services">Cобытия</a></li>-->
 									<li><a href="#protfolio">Портфолио</a></li>
 									<li><a href="#team">Команда</a></li>
-									<!--<li><a href="#blog">Blog</a></li>-->
-									<!--<li><a href="#contact">Contact</a></li>-->
+									<li><a href="#blog">Наши награды</a></li>
+									<!--<li><a href="#contact">Контакты</a></li>-->
 								</ul>
 								<a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
 							</nav>
@@ -67,63 +111,116 @@
 		</header>
 		<!-- End Header Area -->
 		<!-- Start Banner Area -->
-		<section id="services" class="title-bg section-full">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8">
-						<div class="product-area-title text-center">
-							<h2 class="text-white h1">Предстоящие события</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-product">
-							<div class="icon">
-								<span class="lnr lnr-star"></span>
-							</div>
-							<div class="desc">
-								<p>11 ноября 2018</p>
-								<h4>Конкурс <br/>"Новые вершины"</h4>
-								<p>Номер "Лобода"</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-product">
-							<div class="icon">
-								<span class="lnr lnr-star"></span>
-							</div>
-							<div class="desc">
-								<p>14 ноября 2018</p>
-								<h4>Студенческая. <br>Осень</h4>
-								<p>Номер "BrainStorm"</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-product">
-							<div class="icon">
-								<span class="lnr lnr-sun"></span>
-							</div>
-							<div class="desc">
-								<p>16 ноября 2018</p>
-								<h4>Выступление <br>в Министерстве</h4>
-								<p>Номер "Купалинка"</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<!--<section id="services" class="title-bg section-full">-->
+			<!--<div class="container">-->
+				<!--<div class="row justify-content-center">-->
+					<!--<div class="col-lg-8">-->
+						<!--<div class="product-area-title text-center">-->
+							<!--<h2 class="text-white h1">Предстоящие события</h2>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="row">-->
+					<!--<div class="col-lg-3 col-sm-6">-->
+						<!--<div class="single-product">-->
+							<!--<div class="icon">-->
+								<!--<span class="lnr lnr-star"></span>-->
+							<!--</div>-->
+							<!--<div class="desc">-->
+								<!--<p>11 ноября 2018</p>-->
+								<!--<h4>Конкурс <br/>"Новые вершины"</h4>-->
+								<!--<p>Номер "Лобода"</p>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-lg-3 col-sm-6">-->
+						<!--<div class="single-product">-->
+							<!--<div class="icon">-->
+								<!--<span class="lnr lnr-star"></span>-->
+							<!--</div>-->
+							<!--<div class="desc">-->
+								<!--<p>14 ноября 2018</p>-->
+								<!--<h4>Студенческая. <br>Осень</h4>-->
+								<!--<p>Номер "BrainStorm"</p>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-lg-3 col-sm-6">-->
+						<!--<div class="single-product">-->
+							<!--<div class="icon">-->
+								<!--<span class="lnr lnr-sun"></span>-->
+							<!--</div>-->
+							<!--<div class="desc">-->
+								<!--<p>16 ноября 2018</p>-->
+								<!--<h4>Выступление <br>в Министерстве</h4>-->
+								<!--<p>Номер "Купалинка"</p>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</section>-->
 		<section class="banner-area relative">
 			<div class="overlay overlay-bg"></div>
 			<div class="container">
 				<div class="row fullscreen justify-content-center align-items-center">
 					<div class="col-lg-8">
 						<div class="banner-content text-center">
-							<p class="text-uppercase text-white"></p>
-							<h1 class="text-uppercase text-white">Let's dance</h1>
+							<h1 class="text-white">Наши выступления! </h1>
+							<i class="fa fa-arrow-down"></i>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary video-btn" data-toggle="modal"
+									data-src="https://www.youtube.com/embed/PfWTMi8KxmU" data-target="#myModal">
+								Street mix
+							</button>
+
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary video-btn" data-toggle="modal"
+									data-src="https://www.youtube.com/embed/qyQlZYEcZ9w" data-target="#myModal">
+								Воздух
+							</button>
+
+
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary video-btn" data-toggle="modal"
+									data-src="https://www.youtube.com/embed/_92fte02w4w" data-target="#myModal">
+								Сумашедшая
+							</button>
+
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary video-btn" data-toggle="modal"
+									data-src="https://www.youtube.com/embed/_92fte02w4w" data-target="#myModal">
+								Злодеи
+							</button>
+
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary video-btn" data-toggle="modal"
+									data-src="https://www.youtube.com/embed/frsAA4CcKYs" data-target="#myModal">
+								BrainStorm
+							</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+
+
+										<div class="modal-body">
+
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<!-- 16:9 aspect ratio -->
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always">></iframe>
+											</div>
+
+
+										</div>
+
+									</div>
+								</div>
+							</div>
 							<!--<a href="#" class="primary-btn banner-btn">Explore Us</a>-->
 						</div>
 					</div>
@@ -264,6 +361,8 @@
 					<a class="filter" data-filter=".category-5">Купалинка</a>
 					<a class="filter" data-filter=".category-6">Латина</a>
 				</div>
+			</div>
+
 			</div>
 
 			<div id="filter-content" class="row no-gutters mt-70">
@@ -439,7 +538,7 @@
 		</section>
 		<!-- End shuffle Area -->
 		<!-- Start Team member Area -->
-		<section id="team" class="pb-150">
+		<section id="team">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
@@ -815,82 +914,57 @@
 		<!--</section>-->
 		<!--&lt;!&ndash; End Testimonial Area &ndash;&gt;-->
 		<!--&lt;!&ndash; Start Publish Area &ndash;&gt;-->
-		<!--<section id="blog" class="section-full">-->
-			<!--<div class="container">-->
-				<!--<div class="row justify-content-center">-->
-					<!--<div class="col-lg-8">-->
-						<!--<div class="product-area-title text-center">-->
-							<!--<p class="text-uppercase">Latest From Blog</p>-->
-							<!--<h2 class="h1">Publish what you want to <br> not requires social</h2>-->
-						<!--</div>-->
-					<!--</div>-->
-				<!--</div>-->
-				<!--<div class="row">-->
-					<!--<div class="col-lg-3 col-md-6">-->
-						<!--<div class="single-publish">-->
-							<!--<img src="img/p1.jpg" class="img-fluid" alt="">-->
-							<!--<div class="top">-->
-								<!--<div class="mb-15 d-flex">-->
-									<!--<a href="#">25 October, 2017</a>-->
-									<!--<span class="line">|</span>-->
-									<!--<a href="#">By Mark Wiens</a>-->
-								<!--</div>-->
-								<!--<h6 class="text-uppercase"><a href="#">Addiction When Gambling Becomes A Problem</a></h6>-->
-							<!--</div>-->
-							<!--<p class="mb-30">Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their </p>-->
-							<!--<a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<div class="col-lg-3 col-md-6">-->
-						<!--<div class="single-publish">-->
-							<!--<img src="img/p2.jpg" class="img-fluid" alt="">-->
-							<!--<div class="top">-->
-								<!--<div class="mb-15 d-flex">-->
-									<!--<a href="#">25 October, 2017</a>-->
-									<!--<span class="line">|</span>-->
-									<!--<a href="#">By Mark Wiens</a>-->
-								<!--</div>-->
-								<!--<h6 class="text-uppercase"><a href="#">Computer Hardware Desktops And Notebooks </a></h6>-->
-							<!--</div>-->
-							<!--<p class="mb-30">Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it causes anxiety for several different reasons. </p>-->
-							<!--<a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<div class="col-lg-3 col-md-6">-->
-						<!--<div class="single-publish">-->
-							<!--<img src="img/p3.jpg" class="img-fluid" alt="">-->
-							<!--<div class="top">-->
-								<!--<div class="mb-15 d-flex">-->
-									<!--<a href="#">25 October, 2017</a>-->
-									<!--<span class="line">|</span>-->
-									<!--<a href="#">By Mark Wiens</a>-->
-								<!--</div>-->
-								<!--<h6 class="text-uppercase"><a href="#">Make Myspace Your Best Designed Space</a></h6>-->
-							<!--</div>-->
-							<!--<p class="mb-30">Plantronics with its GN Netcom wireless headset creates the next generation of wireless headset and other products such as wireless </p>-->
-							<!--<a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<div class="col-lg-3 col-md-6">-->
-						<!--<div class="single-publish">-->
-							<!--<img src="img/p4.jpg" class="img-fluid" alt="">-->
-							<!--<div class="top">-->
-								<!--<div class="mb-15 d-flex">-->
-									<!--<a href="#">25 October, 2017</a>-->
-									<!--<span class="line">|</span>-->
-									<!--<a href="#">By Mark Wiens</a>-->
-								<!--</div>-->
-								<!--<h6 class="text-uppercase"><a href="#">Video Games Playing With Imagination</a></h6>-->
-							<!--</div>-->
-							<!--<p class="mb-30">About 64% of all on-line teens say that do things online that they wouldn’t want their parents to know about.   11% of all adult internet </p>-->
-							<!--<a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>-->
-						<!--</div>-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</section>-->
-		<!--&lt;!&ndash; End Publish Area &ndash;&gt;-->
-		<!--&lt;!&ndash; Start Contact Area &ndash;&gt;-->
+		<section id="blog" class="section-full">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+							<h2 class="h1">Наши награды</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-publish">
+							<div class="blog-image" style="background-image: url(https://pp.userapi.com/c638029/v638029523/eb89/JcY7P0gIaoY.jpg);"></div>
+							<div class="top">
+								<div class="mb-15 d-flex">
+									<a href="#">Декабрь 2016</a>
+								</div>
+								<h6 class="text-uppercase"><a href="#">Конкурс "Люди которык танцуют"</a></h6>
+							</div>
+							<p class="mb-30">1 место в номинации "Уличный танец"</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-publish">
+							<div class="blog-image" style="background-image: url(https://pp.userapi.com/c840623/v840623525/7508d/sScFWii5sDQ.jpg);"></div>
+							<div class="top">
+								<div class="mb-15 d-flex">
+									<a href="#">2018</a>
+								</div>
+								<h6 class="text-uppercase"><a href="#">Конкурс "Новые имена"</a></h6>
+							</div>
+							<p class="mb-30">Финалисты междунароодного конкурса "Новые имена Беларуси"</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-publish">
+							<div class="blog-image" style="background-image: url(https://pp.userapi.com/c837436/v837436985/2e3d1/JDGZlHIMu7o.jpg);"></div>
+							<div class="top">
+								<div class="mb-15 d-flex">
+									<a href="#">Апрель 2017</a>
+								</div>
+								<h6 class="text-uppercase"><a href="#">Международый конкурс "Сделай Шаг Вперед" в Витебске</a></h6>
+							</div>
+							<p class="mb-30">1 место в номинации "Хип хоп"</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Publish Area -->
+		<!-- Start Contact Area -->
 		<!--<section id="contact" class="section-full gray-bg">-->
 			<!--<div class="container">-->
 				<!--<div class="row justify-content-center">-->
@@ -942,8 +1016,8 @@
 				<!--</div>-->
 			<!--</div>-->
 		<!--</section>-->
-		<!--&lt;!&ndash; End Contact Area &ndash;&gt;-->
-		<!--&lt;!&ndash; Start Cta Area &ndash;&gt;-->
+		<!-- End Contact Area -->
+		<!-- Start Cta Area -->
 		<!--<section class="cta-area">-->
 			<!--<div class="container">-->
 				<!--<div class="row justify-content-center">-->
@@ -1034,6 +1108,7 @@
 		<script src="js/jquery.sticky.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/mixitup.min.js"></script>
+		<script src="js/modal-video.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
